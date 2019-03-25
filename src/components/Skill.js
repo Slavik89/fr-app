@@ -10,7 +10,7 @@ class Skill extends Component {
 
   render() {
     const body =  
-    <ul>
+    <ul className="submenu">
       <li>Familiar with principles of work in IT companies;</li>
       <li>Practical experience in testing processes, Project Life Cycle, Bug Life Cycle;</li>
       <li>Practical experience in functional testing, creation of test documentation design;</li>

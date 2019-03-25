@@ -10,7 +10,7 @@ class Qualities extends Component {
 
   render() {
     const body = 
-    <ul>
+    <ul className="submenu">
       <li>Team worker;</li>
       <li>Sociable, not conflict, polite, energetic, easy-going, responsible, conscientious, punctual;</li>
       <li>Determined and self-organized, easily learned;</li>
