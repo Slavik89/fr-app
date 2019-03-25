@@ -1,34 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import Skill from './components/Skill';
 import Qualities from './components/Qualities';
+import Home from './components/Home';
 
 const history = createBrowserHistory();
-
-const Home = () => (
-  <h1>home</h1>
-);
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter history={history} >
-        <div>
-          <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/skill'>Skill</Link></li>
-            <li><Link to='/qualities'>Qualities</Link></li>
+        <div className="titled">
+          <ul type="none">
+            <li className=""><Link to='/' className="titles">Home</Link></li>
+            <li className=""><Link to='/skill' className="titles">Skill</Link></li>
+            <li className=""><Link to='/qualities' className="titles">Qualities</Link></li>
           </ul>
-        </div>
-        <hr/>
+        </div>        
         <Route path='/' component={Home} />
         <Route path='/skill' component={Skill} />
-        <Route path='/qualities' component={Qualities} />
-  
-        
+        <Route path='/qualities' component={Qualities} />        
       </BrowserRouter>
 
       /* <div className="App">
