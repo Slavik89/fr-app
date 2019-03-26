@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Home from './Home';
 
 class Qualities extends Component {
   constructor(props) {
@@ -19,7 +20,8 @@ class Qualities extends Component {
     return (
       <div>        
         {this.state.isOpen && body}
-        <button className="btn btn-primary" onClick={this.handleClick}>{this.state.isOpen ? 'Hide' : 'Show'}</button>                
+        <button className="btn btn-primary" onClick={this.handleClick}>{this.state.isOpen ? 'Hide' : 'Show'}</button>
+        {this.state.isOpen && <Home/>}                
       </div>
     )
   }    
