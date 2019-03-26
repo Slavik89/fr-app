@@ -1,11 +1,10 @@
 import React from 'react';
 import logo from './../logo.svg';
 
-function Home () {
-    const homeCss = `{.homeCss{width: 60%;}}`
+function Home () {    
     return (      
       <div className="home-container">        
-        <p><style>{homeCss}</style>Hi, My name is Yaroslav. I learn React</p>        
+        <p>Hi, My name is Yaroslav. I learn React</p>        
         <img src={logo} className="App-logo" alt="logo" />
       </div>
     )
